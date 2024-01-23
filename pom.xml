@@ -14,11 +14,10 @@
     <name>accounting-app-restapi</name>
     <description>accounting-app-restapi</description>
     <properties>
-<<<<<<< HEAD
+
         <java.version>21</java.version>
-=======
-        <java.version>11</java.version>
->>>>>>> 7727ca2 (Added to Dockerfile)
+
+
     </properties>
     <dependencies>
         <dependency>
@@ -31,26 +30,18 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
-<<<<<<< HEAD
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-    </dependencies>
 
-    <build>
-=======
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.boot</groupId>-->
-<!--            <artifactId>spring-boot-starter-test</artifactId>-->
-<!--            <scope>test</scope>-->
-<!--        </dependency>-->
     </dependencies>
 
     <build>
         <finalName>app</finalName>
->>>>>>> 7727ca2 (Added to Dockerfile)
+
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
