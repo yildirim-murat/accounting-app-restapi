@@ -15,4 +15,9 @@ public class BaseController {
     public String TestController(){
         return "It's Run for Test Controller2";
     }
+
+    @GetMapping("/check")
+    public String CheckController(){
+        return "It's Run for Check ControllerS";
+    }
 }
