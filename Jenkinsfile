@@ -27,7 +27,7 @@ pipeline {
   //     }
   //   }
   // }
-dockerImageName = "spring-app:latest"
+// dockerImageName = "spring-app:latest"
 
 stages {
     stage('Checkout') {
@@ -43,7 +43,7 @@ stages {
     stage('Dockerize') {
         steps {
             script {
-                docker.build(dockerImageName)
+                docker.build("spring-app:latest")
             }
         }
     }
@@ -51,7 +51,7 @@ stages {
         steps {
             script {
                 docker.withRegistry('https://192.168.1.40:8081', 'docker-registry-credentials') {
-                    docker.image(dockerImageName).push()
+                    docker.image("spring-app:latest").push()
                 }
             }
         }
