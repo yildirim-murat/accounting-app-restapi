@@ -7,6 +7,7 @@ pipeline {
     stage("Build") {
       steps{
         echo 'build app'
+        sh 'mvn clean package -Pprod'
       }
     }
     
