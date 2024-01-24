@@ -27,7 +27,7 @@ pipeline {
   //     }
   //   }
   // }
-def dockerImageName = "spring-app:latest"
+dockerImageName = "spring-app:latest"
 
 stages {
     stage('Checkout') {
