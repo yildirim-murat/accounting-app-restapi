@@ -4,26 +4,18 @@ pipeline {
   
   stages {
     
-    stage("build") {
-      
-      steps{
-        echo 'building the application'
-          script{
-            def test = 2 + 2 > 3 ? "ok" :"not ok"
-            print test
-          }
+    stage("Build") {
         echo 'build app'
       }
-    }
-
-    stage("test") {
+    
+    stage("Test") {
       
       steps{
-          echo 'testing the app'
+          echo 'testing the application codes'
       }
     }
 
-    stage("deploy") {
+    stage("Deploy") {
       
       steps{
           echo 'deploying the app'
