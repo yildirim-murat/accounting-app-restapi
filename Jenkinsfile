@@ -11,9 +11,7 @@ pipeline {
         checkout scm
       }
     }
-
-
-
+    
     stage('Dockerfile is Run!') {
       steps {
         script {
