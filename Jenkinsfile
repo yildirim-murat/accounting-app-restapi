@@ -12,7 +12,7 @@ pipeline {
           echo 'Test Maven is Run'
           def mavenCheck = sh (script:'mvn --version', returnStatus: true)
           if (mavenCheck == 0) {
-            info 'Maven is installed.'
+            echo 'Maven is installed.'
           } else {
             echo 'Maven is not installed.'
          }
