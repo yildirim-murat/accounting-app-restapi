@@ -1,6 +1,10 @@
 pipeline {
   agent any
 
+  tools{
+    docker 'DOCKER'
+  }
+
   stages {
     stage('Check Docker Daemon Access'){
       steps{
