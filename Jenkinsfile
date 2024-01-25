@@ -19,13 +19,35 @@ pipeline {
           def mavenCheck = sh(script: 'mvn --version',returnStatus: true)
           def dockerVersion = sh(script: 'docker --version', returnStatus: true)
           if (dockerVersion == 0 && mavenCheck == 0) {
-            echo 'Docker daemon access test successful.'
+            echo 'Docker daemon access successful and maven is installed...'
           } else {
-            echo 'Unable to access Docker daemon. Make sure Docker is installed and the user has the necessary permissions.'
+            error 'ERROR: Unable to access Docker daemon or maven is not installed!'
           }
         }
       }
     }
-    // Diğer aşamaları buraya ekleyin
+
+    stage('Build SpringBoot Project') {
+      steps {
+        sh 'mvn clean package'
+      }
+    }
+    
+    stage('Dockerize') {
+        steps {
+            script {
+                docker.build("spring-app:latest")
+            }
+        }
+    }
+    stage('Deploy Springboot Application') {
+        steps {
+            script {
+                docker.withRegistry('https://192.168.1.40:8081', 'docker-registry-credentials') {
+                    docker.image("spring-app:latest").push()
+                }
+            }
+        }
+    }
   }
 }
