@@ -36,7 +36,7 @@ pipeline {
     stage('Dockerize') {
         steps {
             script {
-                docker.build("spring-app:latest")
+                docker.build("spring-app")
             }
         }
     }
@@ -44,7 +44,7 @@ pipeline {
         steps {
             script {
                 docker.withRegistry('https://192.168.1.40:8081', 'docker-registry-credentials') {
-                    docker.image("spring-app:latest").push()
+                    docker.image("spring-app").push()
                 }
             }
         }
