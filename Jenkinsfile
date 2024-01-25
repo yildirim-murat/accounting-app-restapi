@@ -31,8 +31,12 @@ pipeline {
 
   agent any
   
-  environment {
-      PATH = "${tool 'MAVEN'}/bin:${env.PATH}"
+  // environment {
+  //     PATH = "${tool 'MAVEN'}/bin:${env.PATH}"
+  // }
+
+  tools{
+    maven 'MAVEN'
   }
 
   stage('Check Maven') {
