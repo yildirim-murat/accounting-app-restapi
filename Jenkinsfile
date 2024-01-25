@@ -6,20 +6,48 @@ pipeline {
   }
 
   stages {
-    stage("Test Maven") {
+    stage('Checkout') {
+      steps {
+        checkout scm
+      }
+    }
+
+    stage("Check Maven") {
       steps{
         script {
-          echo 'Test Maven is Run'
           def mavenCheck = sh (script:'mvn --version', returnStatus: true)
           if (mavenCheck == 0) {
             echo 'Maven is installed.'
           } else {
-            echo 'Maven is not installed.'
+            error 'Maven is not installed.'
          }
         }
-        echo 'Test Maven Step Ended'
       }
     }
+    
+    stage('Build') {
+      steps {
+        sh 'mvn clean package'
+      }
+    }
+    
+    stage('Dockerize') {
+        steps {
+            script {
+                docker.build("spring-app:latest")
+            }
+        }
+    }
+    stage('Deploy') {
+        steps {
+            script {
+                docker.withRegistry('https://192.168.1.40:8081', 'docker-registry-credentials') {
+                    docker.image("spring-app:latest").push()
+                }
+              }
+            }
+          }
+
 
 
   }
