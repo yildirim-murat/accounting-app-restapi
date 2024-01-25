@@ -27,27 +27,10 @@ pipeline {
       }
     }
 
-    stage('Build SpringBoot Project') {
+    stage('Dockerfile is Run!') {
       steps {
-        sh 'mvn clean package'
+        sh 'docker-compose up -d'
       }
-    }
-    
-    stage('Dockerize') {
-        steps {
-            script {
-                docker.build("spring-app")
-            }
-        }
-    }
-    stage('Deploy Springboot Application') {
-        steps {
-            script {
-                docker.withRegistry('https://192.168.1.40:8081', 'docker-registry-credentials') {
-                    docker.image("spring-app").push()
-                }
-            }
-        }
-    }
+    }   
   }
 }
