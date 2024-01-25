@@ -1,16 +1,16 @@
 pipeline {
   agent any
 
- tools {
+  tools {
     maven 'MAVEN'
-    docker 'DOCKER'
+    dockerTool 'DOCKER' // 'dockerTool' kullanımına dikkat edin
   }
 
   stages {
-    stage('Check Docker Daemon Access'){
-      steps{
-        script{
-          def dockerVersion = sh(script: 'docker version',returnStatus: true)
+    stage('Check Docker Daemon Access') {
+      steps {
+        script {
+          def dockerVersion = sh(script: 'docker version', returnStatus: true)
           if (dockerVersion == 0) {
             echo 'Docker daemon access test successful.'
           } else {
@@ -19,5 +19,6 @@ pipeline {
         }
       }
     }
+    // Diğer aşamaları buraya ekleyin
   }
 }
