@@ -1,55 +1,18 @@
 pipeline {
   agent any
 
-  tools {
-    maven 'MAVEN'
-    docker 'DOCKER'
-  }
-
   stages {
-    stage('Checkout') {
-      steps {
-        checkout scm
-      }
-    }
-
-    stage("Check Maven") {
+    stage('Check Docker Daemon Access'){
       steps{
-        script {
-          def mavenCheck = sh (script:'mvn --version', returnStatus: true)
-          if (mavenCheck == 0) {
-            echo 'Maven is installed.'
+        script{
+          def dockerVersion = sh(script: 'docker version',returnStatus: true)
+          if (dockerVersion == 0) {
+            echo 'Docker daemon access test successful.'
           } else {
-            error 'Maven is not installed.'
-         }
-        }
-      }
-    }
-    
-    stage('Build') {
-      steps {
-        sh 'mvn clean package'
-      }
-    }
-    
-    stage('Dockerize') {
-        steps {
-            script {
-                docker.build("spring-app:latest")
-            }
-        }
-    }
-    stage('Deploy') {
-        steps {
-            script {
-                docker.withRegistry('https://192.168.1.40:8081', 'docker-registry-credentials') {
-                    docker.image("spring-app:latest").push()
-                }
-              }
-            }
+            echo 'Unable to access Docker daemon. Make sure Docker is installed and the user has the necessary permissions.'
           }
-
-
-
+        }
+      }
+    }
   }
 }
