@@ -29,8 +29,14 @@ pipeline {
 
     stage('Dockerfile is Run!') {
       steps {
-        sh 'docker-compose up -d'
+        script {
+                    dockerComposeBuild()
+        }
       }
     }   
   }
+
+  def dockerComposeBuild() {
+    sh 'docker-compose up -d'
+}
 }
