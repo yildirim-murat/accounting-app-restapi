@@ -10,7 +10,7 @@ pipeline{
         sh '''
         docker info
         docker version
-        docker compose version
+        docker-compose version
         '''
       }
     }
@@ -23,15 +23,15 @@ pipeline{
 
     stage('Start Container'){
       steps{
-        sh 'docker compose up -d --no-color --wait'
-        sh 'docker compose ps'
+        sh 'docker-compose up -d --no-color --wait'
+        sh 'docker-compose ps'
       }
     }
   }
   post{
     always{
-      sh 'docker compose down --remove-orphans -v'
-      sh 'docker compose ps'
+      sh 'docker-compose down --remove-orphans -v'
+      sh 'docker-compose ps'
     }
   }
 }
