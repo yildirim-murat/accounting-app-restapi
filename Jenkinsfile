@@ -1,31 +1,26 @@
 pipeline {
   agent any
 
-  stages {
-    stage("Test") {
-      steps{
-        echo 'Test Level'
-      }
-    }
-
-     stage("Build") {
-      steps{
-        echo 'Build Level'
-      }
-    }
-
-     stage("Deploy") {
-      steps{
-        echo 'Deploy Level'
-      }
-    }
-
-    stage("External") {
-      steps{
-        echo 'External Check Level'
-      }
-    }
+  tools {
+    maven 'MAVEN'
   }
- 
 
+  stages {
+    stage("Test Maven") {
+      steps{
+        script {
+          echo 'Test Maven is Run'
+          def mavenCheck = sh (script:'mvn --version', returnStatus: true)
+          if (mavenCheck == 0) {
+            echo 'Maven is installed.'
+          } else {
+            echo 'Maven is not installed.'
+         }
+        }
+        echo 'Test Maven Step Ended'
+      }
+    }
+
+
+  }
 }
