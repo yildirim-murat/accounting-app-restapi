@@ -1,8 +1,8 @@
 pipeline {
   agent any
 
-  environment {
-        DOCKER_COMPOSE = tool 'Docker'
+ tools {
+        docker 'Docker'
     }
 
   stages {
@@ -15,7 +15,7 @@ pipeline {
     stage('Dockerfile is Run!') {
       steps {
         script {
-          sh "${DOCKER_COMPOSE} up -d"
+          sh 'docker-compose up -d'
         }
       }
     }   
