@@ -10,7 +10,7 @@ pipeline {
     stage('Check Docker Daemon Access') {
       steps {
         script {
-          def dockerVersion = sh(script: 'docker version', returnStatus: true)
+          def dockerVersion = sh(script: 'docker --version', returnStatus: true)
           if (dockerVersion == 0) {
             echo 'Docker daemon access test successful.'
           } else {
