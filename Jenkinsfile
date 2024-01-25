@@ -6,10 +6,6 @@ pipeline {
     dockerTool 'Docker'
   }
 
-  def dockerComposeBuild() {
-    sh 'docker-compose up -d'
-  }
-
   stages {
     stage('Checkout') {
       steps {
