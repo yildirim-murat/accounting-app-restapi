@@ -24,15 +24,16 @@ pipeline{
     stage('Start Container'){
       steps{
         // sh 'docker-compose up -d --no-color --wait'
-        sh 'docker-compose up -d'
-        sh 'docker-compose ps'
+        sh 'docker build -t restapi .'
+        // sh 'docker-compose ps'
       }
     }
   }
   post{
     always{
-      sh 'docker-compose down --remove-orphans -v'
-      sh 'docker-compose ps'
+      // sh 'docker-compose down --remove-orphans -v'
+      // sh 'docker-compose ps'
+      echo 'Bitti sanki!'
     }
   }
 }
