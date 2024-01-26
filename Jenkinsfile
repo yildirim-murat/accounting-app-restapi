@@ -17,7 +17,7 @@ pipeline{
     stage('Start Container'){
       steps{
         sh 'docker build -t restapi .'
-        sh 'docker run -d -p 8081:8081 restapi'
+        sh 'docker run -d -p 8081:8080 restapi'
       }
     }
   }
