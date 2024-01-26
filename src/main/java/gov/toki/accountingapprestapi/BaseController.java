@@ -8,7 +8,7 @@ public class BaseController {
 
     @GetMapping
     public String BaseControllerTest(){
-        return "Its Run2";
+        return "Its Run2 14:47";
     }
 
     @GetMapping("/test")
