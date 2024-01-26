@@ -8,6 +8,6 @@ public class BaseController {
 
     @GetMapping
     public String BaseControllerTest(){
-        return "Spring Boot Application => Fourth Test 16:40";
+        return "Spring Boot Application =>Automatic Build 26 Jan 2024 16:47";
     }
 }
