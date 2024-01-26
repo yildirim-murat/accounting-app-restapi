@@ -25,6 +25,7 @@ pipeline{
       steps{
         // sh 'docker-compose up -d --no-color --wait'
         sh 'docker build -t restapi .'
+        sh 'docker run -p 8081:8081 restapi'
         // sh 'docker-compose ps'
       }
     }
