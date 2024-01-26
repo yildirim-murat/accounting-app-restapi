@@ -8,16 +8,6 @@ public class BaseController {
 
     @GetMapping
     public String BaseControllerTest(){
-        return "Its Run2 14:47";
-    }
-
-    @GetMapping("/test")
-    public String TestController(){
-        return "It's Run for Test Controller2";
-    }
-
-    @GetMapping("/check")
-    public String CheckController(){
-        return "It's Run for Check ControllerS";
+        return "Spring Boot Application => First Test 16:24";
     }
 }
