@@ -18,7 +18,6 @@ pipeline{
       steps{
         sh 'docker container stop restapp || true'
         sh 'docker container prune --force'
-        sh 'docker image prune --force'
       }
     }
 
