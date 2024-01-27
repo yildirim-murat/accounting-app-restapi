@@ -16,6 +16,7 @@ pipeline{
 
      stage('Docker Prune Operations'){
       steps{
+        sh 'docker container stop restapi || true'
         sh 'docker container prune --force'
         sh 'docker image prune --force'
       }
