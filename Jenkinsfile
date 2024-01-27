@@ -14,6 +14,13 @@ pipeline{
       }
     }
 
+     stage('Docker Prune Operations'){
+      steps{
+        sh 'docker container prune --force'
+        sh 'docker image prune --force'
+      }
+    }
+
     stage('Start Container'){
       steps{
         sh 'docker build -t restapi .'
@@ -31,10 +38,6 @@ pipeline{
             }
 
             always{
-                script{
-                    sh 'docker stop restapp'
-                    sh 'docker rm -f restapp'
-                }
               echo 'CI/CD Pipeline Operations have been discontinued.'
             }
   }
