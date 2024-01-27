@@ -14,6 +14,13 @@ pipeline{
       }
     }
 
+     stage('Docker Prune Operations'){
+      steps{
+        sh 'docker container prune --force'
+        sh 'docker image prune --force'
+      }
+    }
+
     stage('Start Container'){
       steps{
         sh 'docker build -t restapi .'
