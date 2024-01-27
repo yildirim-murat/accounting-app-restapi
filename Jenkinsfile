@@ -38,10 +38,6 @@ pipeline{
             }
 
             always{
-                script{
-                    sh 'docker stop restapp'
-                    sh 'docker rm -f restapp'
-                }
               echo 'CI/CD Pipeline Operations have been discontinued.'
             }
   }
