@@ -1,13 +1,5 @@
 package gov.toki.accountingapprestapi.core.domain.entity.listeners;
 
-import edu.estu.estufastingrestapi.core.domain.constants.RoleConst;
-import edu.estu.estufastingrestapi.core.domain.entity.concretes.Role;
-import edu.estu.estufastingrestapi.core.domain.entity.concretes.User;
-import lombok.experimental.UtilityClass;
-
-import java.util.HashSet;
-import java.util.Set;
-
 @UtilityClass
 public class ListenerHelper {
 

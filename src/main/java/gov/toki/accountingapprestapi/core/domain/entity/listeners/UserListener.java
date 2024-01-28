@@ -1,12 +1,5 @@
 package gov.toki.accountingapprestapi.core.domain.entity.listeners;
 
-import edu.estu.estufastingrestapi.core.domain.constants.RoleConst;
-import edu.estu.estufastingrestapi.core.domain.entity.concretes.Role;
-import edu.estu.estufastingrestapi.core.domain.entity.concretes.User;
-
-import javax.persistence.PrePersist;
-import javax.persistence.PreRemove;
-
 public class UserListener {
 
     @PrePersist

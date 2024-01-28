@@ -1,15 +1,5 @@
 package gov.toki.accountingapprestapi.core.repository.dataseeders.abstracts;
 
-import edu.estu.estufastingrestapi.core.crosscuttingconcerns.annotations.LogExecutionTime;
-import edu.estu.estufastingrestapi.core.domain.entity.abstracts.Identifiable;
-import edu.estu.estufastingrestapi.core.repository.abstracts.JpaRepositoryAdapter;
-import org.springframework.core.Ordered;
-
-import javax.persistence.EntityManager;
-import java.util.Collection;
-import java.util.Comparator;
-import java.util.Objects;
-
 /**
  * Dependent to JPA Repository
  */

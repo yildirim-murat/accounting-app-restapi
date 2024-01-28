@@ -1,15 +1,5 @@
 package gov.toki.accountingapprestapi.core.domain.helper;
 
-import edu.estu.estufastingrestapi.core.service.objectmapping.manual.concretes.AuthorityNameMapper;
-import lombok.experimental.UtilityClass;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContext;
-import org.springframework.security.core.context.SecurityContextHolder;
-
-import java.util.Collections;
-import java.util.List;
-import java.util.Optional;
-
 @UtilityClass
 public class SecurityStaticHelper {
 

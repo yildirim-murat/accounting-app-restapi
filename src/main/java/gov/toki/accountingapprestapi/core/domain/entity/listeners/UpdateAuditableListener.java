@@ -1,11 +1,5 @@
 package gov.toki.accountingapprestapi.core.domain.entity.listeners;
 
-import edu.estu.estufastingrestapi.core.domain.entity.abstracts.UpdateAuditable;
-import edu.estu.estufastingrestapi.core.domain.helper.SecurityStaticHelper;
-
-import javax.persistence.PreUpdate;
-import java.time.LocalDateTime;
-
 public class UpdateAuditableListener {
 
     @PreUpdate

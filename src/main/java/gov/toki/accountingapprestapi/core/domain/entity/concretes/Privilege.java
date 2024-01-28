@@ -1,15 +1,5 @@
 package gov.toki.accountingapprestapi.core.domain.entity.concretes;
 
-import edu.estu.estufastingrestapi.core.domain.constants.UK;
-import edu.estu.estufastingrestapi.core.domain.constants.Validation;
-import edu.estu.estufastingrestapi.core.domain.entity.abstracts.BaseEntity;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-import javax.persistence.*;
-
 @Getter
 @Setter
 @NoArgsConstructor

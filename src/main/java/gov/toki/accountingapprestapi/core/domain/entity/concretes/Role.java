@@ -1,19 +1,5 @@
 package gov.toki.accountingapprestapi.core.domain.entity.concretes;
 
-import edu.estu.estufastingrestapi.core.domain.constants.FK;
-import edu.estu.estufastingrestapi.core.domain.constants.UK;
-import edu.estu.estufastingrestapi.core.domain.constants.Validation;
-import edu.estu.estufastingrestapi.core.domain.entity.abstracts.BaseEntity;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import org.hibernate.annotations.OnDelete;
-import org.hibernate.annotations.OnDeleteAction;
-
-import javax.persistence.*;
-import java.util.Set;
-
 @Getter
 @Setter
 @NoArgsConstructor

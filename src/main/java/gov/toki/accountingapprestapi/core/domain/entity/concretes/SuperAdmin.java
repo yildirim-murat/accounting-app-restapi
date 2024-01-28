@@ -1,15 +1,5 @@
 package gov.toki.accountingapprestapi.core.domain.entity.concretes;
 
-import edu.estu.estufastingrestapi.core.domain.constants.FK;
-import edu.estu.estufastingrestapi.core.domain.entity.listeners.SuperAdminListener;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
-import org.hibernate.annotations.OnDelete;
-import org.hibernate.annotations.OnDeleteAction;
-
-import javax.persistence.*;
-
 @Getter
 @Setter
 @AllArgsConstructor

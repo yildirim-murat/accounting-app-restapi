@@ -1,16 +1,5 @@
 package gov.toki.accountingapprestapi.core.repository.abstracts;
 
-import edu.estu.estufastingrestapi.core.domain.entity.concretes.User;
-import edu.estu.estufastingrestapi.core.service.model.response.user.UserAuthProjection;
-import org.springframework.data.jpa.repository.Modifying;
-import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.query.Param;
-import org.springframework.stereotype.Repository;
-
-import java.time.LocalDate;
-import java.util.Optional;
-import java.util.UUID;
-
 @Repository
 public interface UserRepository extends JpaRepositoryAdapter<User, UUID> {
 

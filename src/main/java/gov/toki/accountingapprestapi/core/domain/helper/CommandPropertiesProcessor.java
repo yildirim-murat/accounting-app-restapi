@@ -1,17 +1,5 @@
 package gov.toki.accountingapprestapi.core.domain.helper;
 
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.boot.context.event.ApplicationReadyEvent;
-import org.springframework.context.event.ContextClosedEvent;
-import org.springframework.context.event.EventListener;
-import org.springframework.core.annotation.Order;
-import org.springframework.lang.NonNull;
-
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Optional;
-
 /**
  * Processor for command.properties file. Runs specified commands according to operating system when time condition satisfied.
  */

@@ -1,15 +1,5 @@
 package gov.toki.accountingapprestapi.core.repository.dataseeders.concretes;
 
-import edu.estu.estufastingrestapi.core.domain.entity.abstracts.Identifiable;
-import edu.estu.estufastingrestapi.core.domain.entity.concretes.Language;
-import edu.estu.estufastingrestapi.core.domain.entity.concretes.SuperAdmin;
-import edu.estu.estufastingrestapi.core.repository.dataseeders.abstracts.BaseDataSeeder;
-import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Component;
-
-import java.time.LocalDate;
-import java.util.UUID;
-
 @Component
 @RequiredArgsConstructor
 public class SuperAdminDataSeeder extends BaseDataSeeder<SuperAdmin, UUID> {
