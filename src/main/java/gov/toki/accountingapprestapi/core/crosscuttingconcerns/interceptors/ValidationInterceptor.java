@@ -1,20 +1,5 @@
 package gov.toki.accountingapprestapi.core.crosscuttingconcerns.interceptors;
 
-import edu.estu.estufastingrestapi.core.crosscuttingconcerns.annotations.Valid;
-import edu.estu.estufastingrestapi.core.crosscuttingconcerns.helper.AopHelper;
-import lombok.RequiredArgsConstructor;
-import org.aspectj.lang.ProceedingJoinPoint;
-import org.aspectj.lang.annotation.Around;
-import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Pointcut;
-import org.springframework.stereotype.Component;
-
-import javax.validation.ConstraintViolation;
-import javax.validation.ConstraintViolationException;
-import javax.validation.Validator;
-import java.util.List;
-import java.util.Set;
-
 @Aspect
 @Component
 @RequiredArgsConstructor

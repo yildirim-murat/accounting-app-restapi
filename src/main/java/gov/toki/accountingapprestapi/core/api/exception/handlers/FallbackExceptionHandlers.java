@@ -1,27 +1,5 @@
 package gov.toki.accountingapprestapi.core.api.exception.handlers;
 
-import edu.estu.estufastingrestapi.core.api.common.ResponseBuilder;
-import edu.estu.estufastingrestapi.core.domain.constants.MsgCode;
-import edu.estu.estufastingrestapi.core.service.response.abstraction.ServiceResponse;
-import edu.estu.estufastingrestapi.core.service.response.error.ServiceErrorDataResponse;
-import org.springframework.beans.TypeMismatchException;
-import org.springframework.core.NestedRuntimeException;
-import org.springframework.core.Ordered;
-import org.springframework.core.annotation.Order;
-import org.springframework.data.mapping.PropertyReferenceException;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.HttpRequestMethodNotSupportedException;
-import org.springframework.web.bind.MissingServletRequestParameterException;
-import org.springframework.web.bind.annotation.ControllerAdvice;
-import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
-import org.springframework.web.multipart.support.MissingServletRequestPartException;
-import org.springframework.web.servlet.NoHandlerFoundException;
-
-import java.util.Objects;
-import java.util.Set;
 
 @ControllerAdvice
 @Order(Ordered.LOWEST_PRECEDENCE)

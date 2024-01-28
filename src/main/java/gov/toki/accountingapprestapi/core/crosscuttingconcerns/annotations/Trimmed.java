@@ -1,13 +1,5 @@
 package gov.toki.accountingapprestapi.core.crosscuttingconcerns.annotations;
 
-import edu.estu.estufastingrestapi.core.service.model.request.abstraction.RequestModel;
-
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.Target;
-
-import static java.lang.annotation.RetentionPolicy.RUNTIME;
-
 /**
  * Trims the string fields of the parameters which is subclass of {@link RequestModel}.
  *

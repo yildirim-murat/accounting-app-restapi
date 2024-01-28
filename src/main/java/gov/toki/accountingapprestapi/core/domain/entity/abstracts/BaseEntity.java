@@ -1,20 +1,5 @@
 package gov.toki.accountingapprestapi.core.domain.entity.abstracts;
 
-import edu.estu.estufastingrestapi.core.domain.constants.Validation;
-import edu.estu.estufastingrestapi.core.domain.entity.listeners.CreateAuditableListener;
-import edu.estu.estufastingrestapi.core.domain.entity.listeners.UpdateAuditableListener;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import org.hibernate.Hibernate;
-
-import javax.persistence.Column;
-import javax.persistence.EntityListeners;
-import javax.persistence.MappedSuperclass;
-import java.time.LocalDateTime;
-import java.util.Objects;
-
 @Getter
 @Setter
 @AllArgsConstructor

@@ -1,33 +1,5 @@
 package gov.toki.accountingapprestapi.core.api.controllers.v1;
 
-import edu.estu.estufastingrestapi.core.api.common.Origin;
-import edu.estu.estufastingrestapi.core.api.common.ResponseBuilder;
-import edu.estu.estufastingrestapi.core.api.security.JwtTokenHelper;
-import edu.estu.estufastingrestapi.core.crosscuttingconcerns.annotations.LogExecutionTime;
-import edu.estu.estufastingrestapi.core.crosscuttingconcerns.annotations.Trimmed;
-import edu.estu.estufastingrestapi.core.crosscuttingconcerns.annotations.Valid;
-import edu.estu.estufastingrestapi.core.domain.constants.MsgCode;
-import edu.estu.estufastingrestapi.core.domain.constants.Validation;
-import edu.estu.estufastingrestapi.core.service.abstracts.UserService;
-import edu.estu.estufastingrestapi.core.service.model.request.authentication.CustomerLoginRequestModel;
-import edu.estu.estufastingrestapi.core.service.model.request.authentication.ManagementLoginRequestModel;
-import edu.estu.estufastingrestapi.core.service.model.response.user.UserAuthProjection;
-import edu.estu.estufastingrestapi.core.service.response.abstraction.ServiceResponse;
-import edu.estu.estufastingrestapi.core.service.response.success.ServiceSuccessDataResponse;
-import edu.estu.estufastingrestapi.service.abstracts.CustomerService;
-import io.swagger.annotations.Api;
-import lombok.RequiredArgsConstructor;
-import lombok.SneakyThrows;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.security.authentication.BadCredentialsException;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.*;
-
 @LogExecutionTime
 @Trimmed
 @Validated

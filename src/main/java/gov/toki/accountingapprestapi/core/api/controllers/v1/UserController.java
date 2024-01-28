@@ -1,35 +1,6 @@
 package gov.toki.accountingapprestapi.core.api.controllers.v1;
 
-import edu.estu.estufastingrestapi.core.api.common.Origin;
-import edu.estu.estufastingrestapi.core.api.common.ResponseBuilder;
-import edu.estu.estufastingrestapi.core.crosscuttingconcerns.annotations.LogExecutionTime;
-import edu.estu.estufastingrestapi.core.crosscuttingconcerns.annotations.Trimmed;
-import edu.estu.estufastingrestapi.core.crosscuttingconcerns.annotations.Valid;
-import edu.estu.estufastingrestapi.core.domain.constants.MsgCode;
-import edu.estu.estufastingrestapi.core.domain.constants.RoleConst;
-import edu.estu.estufastingrestapi.core.domain.constants.Validation;
-import edu.estu.estufastingrestapi.core.service.abstracts.UserService;
-import edu.estu.estufastingrestapi.core.service.model.request.pagerequest.PageRequestModel;
-import edu.estu.estufastingrestapi.core.service.model.request.user.UserPasswordUpdateRequest;
-import edu.estu.estufastingrestapi.core.service.model.response.user.UserFullyJoinedProjection;
-import edu.estu.estufastingrestapi.core.service.model.response.user.UserQuickProjection;
-import edu.estu.estufastingrestapi.core.service.model.response.user.UserSemiJoinedProjection;
-import edu.estu.estufastingrestapi.core.service.response.abstraction.ServiceResponse;
-import io.swagger.annotations.Api;
-import lombok.RequiredArgsConstructor;
-import org.springframework.format.annotation.DateTimeFormat;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.annotation.Secured;
-import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.*;
 
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.Past;
-import javax.validation.constraints.Pattern;
-import javax.validation.constraints.Size;
-import java.time.LocalDate;
 
 @RequiredArgsConstructor
 @LogExecutionTime

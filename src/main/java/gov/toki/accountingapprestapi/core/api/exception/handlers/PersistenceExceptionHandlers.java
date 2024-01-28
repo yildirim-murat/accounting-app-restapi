@@ -1,24 +1,5 @@
 package gov.toki.accountingapprestapi.core.api.exception.handlers;
 
-import edu.estu.estufastingrestapi.core.api.common.ResponseBuilder;
-import edu.estu.estufastingrestapi.core.domain.constants.MsgCode;
-import edu.estu.estufastingrestapi.core.domain.helper.StringTools;
-import edu.estu.estufastingrestapi.core.service.response.abstraction.ServiceResponse;
-import edu.estu.estufastingrestapi.core.service.response.error.ServiceErrorDataResponse;
-import lombok.RequiredArgsConstructor;
-import org.springframework.core.annotation.Order;
-import org.springframework.dao.DataIntegrityViolationException;
-import org.springframework.dao.EmptyResultDataAccessException;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.ControllerAdvice;
-import org.springframework.web.bind.annotation.ExceptionHandler;
-
-import javax.persistence.EntityNotFoundException;
-import javax.persistence.PersistenceException;
-import java.sql.SQLException;
-import java.util.Optional;
-
 @RequiredArgsConstructor
 @ControllerAdvice
 @Order(0)

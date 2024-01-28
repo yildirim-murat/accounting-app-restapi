@@ -1,13 +1,5 @@
 package gov.toki.accountingapprestapi.core.domain.constants;
 
-import edu.estu.estufastingrestapi.core.domain.entity.concretes.Role;
-import edu.estu.estufastingrestapi.core.domain.helper.ReflectionHelper;
-import lombok.experimental.UtilityClass;
-import lombok.extern.slf4j.Slf4j;
-
-import java.lang.reflect.Field;
-import java.util.*;
-
 @Slf4j
 @UtilityClass
 public class RoleConst {
