@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.2.1</version>
+        <version>3.2.2</version>
         <relativePath/>
     </parent>
     <groupId>gov.toki</groupId>
@@ -13,6 +13,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>accounting-app-restapi</name>
     <description>accounting-app-restapi</description>
+
     <properties>
         <java.version>17</java.version>
     </properties>
@@ -42,6 +43,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>jakarta.validation</groupId>
+            <artifactId>jakarta.validation-api</artifactId>
+            <version>3.0.2</version>
         </dependency>
     </dependencies>
 
