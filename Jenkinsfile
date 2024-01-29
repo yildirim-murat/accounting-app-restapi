@@ -17,7 +17,8 @@ pipeline{
      stage('Docker Prune Operations'){
       steps{
         sh 'docker container stop restapp || true'
-        sh 'docker container prune --force'
+        sh 'docker container rm -f restapp || true'
+        sh 'docker image rm -f restapi || true'
       }
     }
 
