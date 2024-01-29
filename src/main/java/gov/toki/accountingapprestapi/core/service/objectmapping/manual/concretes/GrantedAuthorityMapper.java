@@ -1,14 +1,5 @@
 package gov.toki.accountingapprestapi.core.service.objectmapping.manual.concretes;
 
-import edu.estu.estufastingrestapi.core.domain.helper.ReflectionHelper;
-import edu.estu.estufastingrestapi.core.service.objectmapping.abstraction.Mapper;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.stereotype.Component;
-
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
 
 /**
  * @implSpec Source collection should have String getName() and Collection getPrivileges() methods.

@@ -1,18 +1,5 @@
 package gov.toki.accountingapprestapi.core.repository.helper;
 
-import edu.estu.estufastingrestapi.core.domain.helper.CommandPropertiesProcessor;
-import edu.estu.estufastingrestapi.core.domain.helper.PropertiesFileHelper;
-import edu.estu.estufastingrestapi.core.domain.helper.ThreadHelper;
-import lombok.Getter;
-import lombok.SneakyThrows;
-import lombok.experimental.UtilityClass;
-import lombok.extern.slf4j.Slf4j;
-
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.util.Optional;
-import java.util.function.Consumer;
 
 @Slf4j
 @UtilityClass

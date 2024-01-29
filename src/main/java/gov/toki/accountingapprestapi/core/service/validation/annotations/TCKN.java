@@ -1,15 +1,5 @@
 package gov.toki.accountingapprestapi.core.service.validation.annotations;
 
-import edu.estu.estufastingrestapi.core.domain.constants.MsgCode;
-import edu.estu.estufastingrestapi.core.service.validation.validators.TCKNLongValidator;
-import edu.estu.estufastingrestapi.core.service.validation.validators.TCKNStringValidator;
-
-import javax.validation.Constraint;
-import javax.validation.Payload;
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
 
 /**
  * Turkish republic identification number

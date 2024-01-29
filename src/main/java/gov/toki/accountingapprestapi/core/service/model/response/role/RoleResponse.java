@@ -1,14 +1,5 @@
 package gov.toki.accountingapprestapi.core.service.model.response.role;
 
-import edu.estu.estufastingrestapi.core.service.model.abstraction.Model;
-import edu.estu.estufastingrestapi.core.service.model.response.privilege.PrivilegeResponse;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-import java.util.Collection;
-
 @Getter
 @Setter
 @NoArgsConstructor

@@ -1,8 +1,6 @@
 package gov.toki.accountingapprestapi.core.service.objectmapping.abstraction;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
+
 
 public interface CollectionMapper<Source, Destination> extends Mapper<Source, Destination> {
 

@@ -1,28 +1,5 @@
 package gov.toki.accountingapprestapi.core.service.concretes;
 
-import edu.estu.estufastingrestapi.core.domain.constants.MsgCode;
-import edu.estu.estufastingrestapi.core.domain.entity.concretes.User;
-import edu.estu.estufastingrestapi.core.repository.abstracts.UserRepository;
-import edu.estu.estufastingrestapi.core.service.abstracts.UserService;
-import edu.estu.estufastingrestapi.core.service.model.request.pagerequest.PageRequestModel;
-import edu.estu.estufastingrestapi.core.service.model.response.user.UserAuthProjection;
-import edu.estu.estufastingrestapi.core.service.objectmapping.manual.concretes.PageRequestMapper;
-import edu.estu.estufastingrestapi.core.service.objectmapping.manual.concretes.UserDetailsMapper;
-import edu.estu.estufastingrestapi.core.service.response.abstraction.ServiceDataResponse;
-import edu.estu.estufastingrestapi.core.service.response.abstraction.ServiceResponse;
-import edu.estu.estufastingrestapi.core.service.response.helper.ResponseHelper;
-import edu.estu.estufastingrestapi.core.service.response.success.ServiceSuccessDataResponse;
-import edu.estu.estufastingrestapi.core.service.response.success.ServiceSuccessResponse;
-import lombok.RequiredArgsConstructor;
-import org.springframework.security.authentication.BadCredentialsException;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.stereotype.Service;
-
-import javax.persistence.EntityNotFoundException;
-import javax.transaction.Transactional;
-import java.time.LocalDate;
-import java.util.UUID;
-
 @Service
 @Transactional
 @RequiredArgsConstructor

@@ -1,12 +1,5 @@
 package gov.toki.accountingapprestapi.core.service.validation.annotations;
 
-import edu.estu.estufastingrestapi.core.domain.constants.MsgCode;
-import edu.estu.estufastingrestapi.core.domain.entity.abstracts.Entity;
-import edu.estu.estufastingrestapi.core.service.validation.validators.ReferenceValidator;
-
-import javax.validation.Constraint;
-import javax.validation.Payload;
-import java.lang.annotation.*;
 
 @Constraint(validatedBy = ReferenceValidator.class)
 @Target({ElementType.FIELD, ElementType.PARAMETER})

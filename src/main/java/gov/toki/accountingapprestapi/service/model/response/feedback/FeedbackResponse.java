@@ -1,13 +1,5 @@
 package gov.toki.accountingapprestapi.service.model.response.feedback;
 
-import edu.estu.estufastingrestapi.core.service.model.response.abstraction.AuditedResponse;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-import java.util.UUID;
-
 @Getter
 @Setter
 @NoArgsConstructor

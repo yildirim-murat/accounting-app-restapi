@@ -1,11 +1,5 @@
 package gov.toki.accountingapprestapi.core.service.validation.validators;
 
-import edu.estu.estufastingrestapi.core.domain.helper.ReflectionHelper;
-import edu.estu.estufastingrestapi.core.service.validation.annotations.ScheduleConflictCheck;
-import edu.estu.estufastingrestapi.core.service.validation.validators.abstraction.BaseConstraintValidator;
-
-import javax.validation.ConstraintValidatorContext;
-
 public class ScheduleConflictCheckValidator extends BaseConstraintValidator<ScheduleConflictCheck, Object> {
 
     @Override

@@ -1,10 +1,5 @@
 package gov.toki.accountingapprestapi.core.service.objectmapping.manual.concretes;
 
-import edu.estu.estufastingrestapi.core.domain.entity.concretes.User;
-import edu.estu.estufastingrestapi.core.service.objectmapping.manual.abstracts.ManualMapper;
-import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Component;
-
 @Component
 @RequiredArgsConstructor
 public class UserDetailsMapper implements ManualMapper<User, org.springframework.security.core.userdetails.User> {

@@ -1,9 +1,5 @@
 package gov.toki.accountingapprestapi.core.service.objectmapping.mapstruct;
 
-import edu.estu.estufastingrestapi.core.domain.entity.concretes.SuperAdmin;
-import edu.estu.estufastingrestapi.core.service.model.request.superadmin.SuperAdminUpdateRequestModel;
-import edu.estu.estufastingrestapi.core.service.objectmapping.MappingHelper;
-import org.mapstruct.*;
 
 @Mapper(componentModel = "spring", imports = MappingHelper.class, nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE, nullValueCheckStrategy = NullValueCheckStrategy.ALWAYS)
 public abstract class SuperAdminUpdateMapStructMapper implements MapStructMapper<SuperAdminUpdateRequestModel, SuperAdmin> {

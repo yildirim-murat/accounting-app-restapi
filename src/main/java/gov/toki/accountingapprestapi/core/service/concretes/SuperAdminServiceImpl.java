@@ -1,27 +1,5 @@
 package gov.toki.accountingapprestapi.core.service.concretes;
 
-import edu.estu.estufastingrestapi.core.domain.constants.MsgCode;
-import edu.estu.estufastingrestapi.core.domain.entity.concretes.SuperAdmin;
-import edu.estu.estufastingrestapi.core.repository.abstracts.SuperAdminRepository;
-import edu.estu.estufastingrestapi.core.repository.abstracts.UserRepository;
-import edu.estu.estufastingrestapi.core.service.abstracts.SuperAdminService;
-import edu.estu.estufastingrestapi.core.service.helper.EntityServiceHelper;
-import edu.estu.estufastingrestapi.core.service.model.abstraction.Model;
-import edu.estu.estufastingrestapi.core.service.model.request.pagerequest.PageRequestModel;
-import edu.estu.estufastingrestapi.core.service.model.request.superadmin.SuperAdminCreateRequestModel;
-import edu.estu.estufastingrestapi.core.service.model.request.superadmin.SuperAdminUpdateRequestModel;
-import edu.estu.estufastingrestapi.core.service.model.response.superadmin.SuperAdminResponse;
-import edu.estu.estufastingrestapi.core.service.objectmapping.manual.concretes.PageRequestMapper;
-import edu.estu.estufastingrestapi.core.service.objectmapping.mapstruct.MapStructMapper;
-import edu.estu.estufastingrestapi.core.service.response.abstraction.ServiceDataResponse;
-import edu.estu.estufastingrestapi.core.service.response.abstraction.ServiceResponse;
-import edu.estu.estufastingrestapi.core.service.response.success.ServiceSuccessDataResponse;
-import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Service;
-
-import javax.persistence.EntityNotFoundException;
-import javax.transaction.Transactional;
-
 @Service
 @Transactional
 @RequiredArgsConstructor

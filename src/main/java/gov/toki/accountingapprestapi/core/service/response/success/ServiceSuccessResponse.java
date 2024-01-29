@@ -1,7 +1,5 @@
 package gov.toki.accountingapprestapi.core.service.response.success;
 
-import edu.estu.estufastingrestapi.core.domain.constants.MsgCode;
-import edu.estu.estufastingrestapi.core.service.response.abstraction.ServiceResponse;
 
 public class ServiceSuccessResponse extends ServiceResponse {
 

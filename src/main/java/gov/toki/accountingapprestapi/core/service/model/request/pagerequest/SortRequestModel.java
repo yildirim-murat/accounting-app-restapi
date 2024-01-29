@@ -1,17 +1,5 @@
 package gov.toki.accountingapprestapi.core.service.model.request.pagerequest;
 
-import edu.estu.estufastingrestapi.core.domain.constants.MsgCode;
-import edu.estu.estufastingrestapi.core.domain.constants.Validation;
-import edu.estu.estufastingrestapi.core.service.model.request.abstraction.RequestModel;
-import edu.estu.estufastingrestapi.core.service.validation.annotations.MaxCollectionSize;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-import javax.validation.Valid;
-import java.util.List;
-
 @Getter
 @Setter
 @AllArgsConstructor

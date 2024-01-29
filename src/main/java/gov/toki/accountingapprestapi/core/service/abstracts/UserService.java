@@ -1,15 +1,6 @@
 package gov.toki.accountingapprestapi.core.service.abstracts;
 
-import edu.estu.estufastingrestapi.core.service.abstracts.infrastructure.DeletableService;
-import edu.estu.estufastingrestapi.core.service.abstracts.infrastructure.EntityService;
-import edu.estu.estufastingrestapi.core.service.abstracts.infrastructure.ReadableService;
-import edu.estu.estufastingrestapi.core.service.model.response.user.UserAuthProjection;
-import edu.estu.estufastingrestapi.core.service.response.abstraction.ServiceDataResponse;
-import edu.estu.estufastingrestapi.core.service.response.abstraction.ServiceResponse;
-import org.springframework.security.core.userdetails.UserDetailsService;
 
-import java.time.LocalDate;
-import java.util.UUID;
 
 public interface UserService extends UserDetailsService, EntityService, ReadableService<String>, DeletableService<UUID> {
 

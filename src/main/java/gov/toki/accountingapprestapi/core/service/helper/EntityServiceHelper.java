@@ -1,12 +1,5 @@
 package gov.toki.accountingapprestapi.core.service.helper;
 
-import edu.estu.estufastingrestapi.core.domain.entity.abstracts.Identifiable;
-import edu.estu.estufastingrestapi.core.domain.helper.BeanHelper;
-import edu.estu.estufastingrestapi.core.repository.abstracts.JpaRepositoryAdapter;
-import lombok.experimental.UtilityClass;
-
-import javax.persistence.EntityManager;
-
 @UtilityClass
 public class EntityServiceHelper {
 

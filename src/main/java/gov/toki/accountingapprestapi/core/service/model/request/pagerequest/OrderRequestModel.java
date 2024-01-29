@@ -1,15 +1,5 @@
 package gov.toki.accountingapprestapi.core.service.model.request.pagerequest;
 
-import edu.estu.estufastingrestapi.core.domain.constants.MsgCode;
-import edu.estu.estufastingrestapi.core.service.model.request.abstraction.RequestModel;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import org.springframework.data.domain.Sort;
-
-import javax.validation.constraints.NotEmpty;
-
 @Getter
 @Setter
 @AllArgsConstructor

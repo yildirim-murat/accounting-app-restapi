@@ -1,12 +1,5 @@
 package gov.toki.accountingapprestapi.core.service.objectmapping.manual.concretes;
 
-import edu.estu.estufastingrestapi.core.service.model.request.pagerequest.OrderRequestModel;
-import edu.estu.estufastingrestapi.core.service.model.request.pagerequest.SortRequestModel;
-import edu.estu.estufastingrestapi.core.service.objectmapping.manual.abstracts.ManualMapper;
-import lombok.RequiredArgsConstructor;
-import org.springframework.data.domain.Sort;
-import org.springframework.stereotype.Component;
-
 @Component
 @RequiredArgsConstructor
 public class SortMapper implements ManualMapper<SortRequestModel, Sort> {

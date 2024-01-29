@@ -1,12 +1,5 @@
 package gov.toki.accountingapprestapi.core.service.model.request.user;
 
-import edu.estu.estufastingrestapi.core.domain.constants.MsgCode;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-import javax.validation.constraints.NotEmpty;
 
 @Getter
 @Setter

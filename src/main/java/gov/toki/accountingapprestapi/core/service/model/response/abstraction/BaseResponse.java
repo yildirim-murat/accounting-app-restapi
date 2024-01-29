@@ -1,10 +1,5 @@
 package gov.toki.accountingapprestapi.core.service.model.response.abstraction;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
 @Getter
 @Setter
 @NoArgsConstructor

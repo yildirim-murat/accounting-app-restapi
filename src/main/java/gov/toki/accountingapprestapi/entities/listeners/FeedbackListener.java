@@ -1,9 +1,5 @@
 package gov.toki.accountingapprestapi.entities.listeners;
 
-import edu.estu.estufastingrestapi.entities.concretes.Feedback;
-
-import javax.persistence.PrePersist;
-
 public class FeedbackListener {
 
     @PrePersist

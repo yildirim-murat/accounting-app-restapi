@@ -1,15 +1,5 @@
 package gov.toki.accountingapprestapi.service.objectmapping.mapstruct;
 
-import edu.estu.estufastingrestapi.core.service.objectmapping.mapstruct.MapStructMapper;
-import edu.estu.estufastingrestapi.entities.concretes.Staff;
-import edu.estu.estufastingrestapi.service.model.request.staff.StaffCreateRequestModel;
-import lombok.Setter;
-import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
-import org.mapstruct.MappingTarget;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-
 @Setter(onMethod = @__(@Autowired))
 @Mapper(componentModel = "spring")
 public abstract class StaffCreateMapStructMapper implements MapStructMapper<StaffCreateRequestModel, Staff> {

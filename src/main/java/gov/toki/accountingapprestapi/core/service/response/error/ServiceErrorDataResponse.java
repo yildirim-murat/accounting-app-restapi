@@ -1,11 +1,5 @@
 package gov.toki.accountingapprestapi.core.service.response.error;
 
-import edu.estu.estufastingrestapi.core.domain.constants.MsgCode;
-import edu.estu.estufastingrestapi.core.domain.helper.ExceptionTools;
-import edu.estu.estufastingrestapi.core.service.response.abstraction.ServiceDataResponse;
-import lombok.Getter;
-import lombok.extern.slf4j.Slf4j;
-
 @Getter
 @Slf4j
 public class ServiceErrorDataResponse<T> extends ServiceDataResponse<T> {

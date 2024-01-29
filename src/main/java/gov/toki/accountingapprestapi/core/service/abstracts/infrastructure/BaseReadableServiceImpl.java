@@ -1,21 +1,5 @@
 package gov.toki.accountingapprestapi.core.service.abstracts.infrastructure;
 
-import edu.estu.estufastingrestapi.core.domain.constants.MsgCode;
-import edu.estu.estufastingrestapi.core.domain.entity.abstracts.Identifiable;
-import edu.estu.estufastingrestapi.core.repository.abstracts.JpaRepositoryAdapter;
-import edu.estu.estufastingrestapi.core.service.model.request.pagerequest.PageRequestModel;
-import edu.estu.estufastingrestapi.core.service.objectmapping.abstraction.Mapper;
-import edu.estu.estufastingrestapi.core.service.response.abstraction.ServiceDataResponse;
-import edu.estu.estufastingrestapi.core.service.response.abstraction.ServiceResponse;
-import edu.estu.estufastingrestapi.core.service.response.success.ServiceSuccessDataResponse;
-import lombok.Setter;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.transaction.annotation.Transactional;
-import org.springframework.validation.annotation.Validated;
-
-import javax.persistence.EntityNotFoundException;
-
 @Setter(onMethod = @__(@Autowired))
 @Validated
 @Transactional

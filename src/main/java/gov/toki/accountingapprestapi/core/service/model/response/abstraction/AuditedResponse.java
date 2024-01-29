@@ -1,14 +1,5 @@
 package gov.toki.accountingapprestapi.core.service.model.response.abstraction;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-import edu.estu.estufastingrestapi.core.service.model.abstraction.Model;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-import java.time.LocalDateTime;
-
 @Getter
 @Setter
 @NoArgsConstructor
